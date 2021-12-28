@@ -29,13 +29,18 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <!-- Smooth Scrolling -->
+    <script
+      defer
+      src="https://unpkg.com/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"
+    ></script>
     <!-- ==================== SCRIPTS ==================== -->
     <script src="scripts/main.js" defer></script>
     <!-- ==================== END SCRIPTS ==================== -->
   </head>
   <body>
     <header class="header">
-      <a href="">
+      <a href="#">
         <img
           class="header-logo"
           src="assets/svg-page/ballerini-logo.svg"
@@ -51,16 +56,16 @@
             </a>
           </li>
           <li>
-            <a class="main-nav-link" href="https://discord.com/invite/wagxzStdcR">Tutorial</a>
+            <a class="main-nav-link" href="#section-1">Tutorial</a>
           </li>
           <li>
-            <a class="main-nav-link" href="https://discord.com/invite/wagxzStdcR">Open Source</a>
+            <a class="main-nav-link" href="#section-2">Open Source</a>
           </li>
           <li>
-            <a class="main-nav-link" href="https://discord.com/invite/wagxzStdcR">Comandos</a>
+            <a class="main-nav-link" href="#section-3">Comandos</a>
           </li>
           <li>
-            <a class="main-nav-link nav-cta" href="https://discord.com/invite/wagxzStdcR">
+            <a class="main-nav-link nav-cta" href="#section-4">
               <img src="assets/svg-page/discord-logo-white.svg" alt="Logo do discord" />
               <span role="text">Add Discord</span>
             </a>
@@ -143,7 +148,7 @@
         </div>
       </section>
 
-      <section class="section-how">
+      <section class="section-how" id="section-1">
         <!-- HEADING -->
         <div class="container">
           <span class="subheading">Como funciona?</span>
@@ -195,7 +200,7 @@
         </div>
       </section>
 
-      <section class="section-feature">
+      <section class="section-feature" id="section-2">
         <!-- HEADING -->
         <div class="container text-center">
           <span class="subheading">Por que nos escolher?</span>
@@ -234,7 +239,7 @@
         </div>
       </section>
 
-      <section class="section-faq">
+      <section class="section-faq" id="section-3">
         <!-- HEADING -->
         <div class="container">
           <span class="subheading">FAQ&mdash;</span>
@@ -289,7 +294,7 @@
     <footer class="footer">
       <div class="container grid grid--2-cols">
         <div class="logo-col">
-          <a href="">
+          <a href="#">
             <img
               class="footer-logo"
               src="assets/svg-page/ballerini-logo.svg"
@@ -299,17 +304,17 @@
 
           <ul class="social-links">
             <li>
-              <a href="#">
+              <a href="https://instagram.com">
                 <ion-icon name="logo-instagram"></ion-icon>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://discord.com">
                 <ion-icon name="logo-discord"></ion-icon>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://github.com">
                 <ion-icon name="logo-github"></ion-icon>
               </a>
             </li>
@@ -320,10 +325,10 @@
 
         <nav class="terms-col">
           <ul>
-            <li><a href="#">Termos e Privacidade</a></li>
-            <li><a href="#">Suporte</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li><a href="#terms">Termos e Privacidade</a></li>
+            <li><a href="#support">Suporte</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#faq">FAQ</a></li>
           </ul>
         </nav>
       </div>
