@@ -1,0 +1,210 @@
+/* ======== Bellow: 1344px (Smaller Desktop) ============== */
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+}
+/* ======== Bellow: 1200px (Landscape Tablets) ============== */
+@media (max-width: 75em) {
+  /* Base  */
+  html {
+    font-size: 56.25%;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3rem;
+  }
+
+  /* Layout */
+  .header {
+    padding: 0 var(--size-32);
+  }
+  .hero {
+    gap: var(--size-48);
+  }
+}
+/* ======== Bellow: 880px (Tablets) ============== */
+@media (max-width: 55em) {
+  html {
+    /* 8px / 16px = 50% */
+    font-size: 50%;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 12.8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-text-box,
+  .hero-image-box {
+    text-align: center;
+  }
+  .hero-img {
+    width: 55%;
+  }
+
+  .community-container {
+    margin-top: 3.2rem;
+    justify-content: center;
+  }
+
+  .how-number {
+    font-size: 8.6rem;
+  }
+
+  .section-feature {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* ============== Mobile Navigation =============== */
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    background-color: rgba(28, 19, 16, 0.986);
+    /* position to 100% of screen */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation.*/
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav--open .main-nav {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+  }
+
+  .nav--open .icon-close {
+    display: block;
+  }
+
+  .nav--open .icon-open {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+  /* ============== END Mobile Navigation =============== */
+}
+/* ======== Bellow: 794px (Smaller Tablets) ============== */
+@media (max-width: 44em) {
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  .community-text span {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .how-image-box img {
+    width: 90%;
+  }
+
+  .feature-title {
+    font-size: 2.6rem;
+  }
+
+  .feature-text {
+    font-size: 2rem;
+  }
+
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hidden-box p {
+    font-size: 2rem;
+    line-height: 1.8;
+  }
+}
+/* ======== Bellow: 6 (Smaller Tablets) ============== */
+@media (max-width: 35em) {
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .section-how,
+  .section-feature,
+  .section-faq,
+  .footer {
+    padding: 8rem 0;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem;
+  }
+
+  .hero .btn {
+    width: 100%;
+  }
+
+  .btn--full {
+    margin-bottom: 1.6rem;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+  .hero-img {
+    width: 80%;
+  }
+
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .how-image-box img {
+    width: 80%;
+  }
+
+  .how-image-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .how-image-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .how-image-box {
+    transform: translateY(2.4rem);
+  }
+}
+
+/* 
+Font-size System (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+Spacing system (px):
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
