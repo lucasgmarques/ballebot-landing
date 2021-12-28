@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BalleBot</title>
+    <meta
+      name="description"
+      content="Uma landing page para site de Bot de Discord, para gerenciar grupos."
+    />
+    <title>BalleBot &mdash; Bot para toda obra</title>
+
+    <!-- ==================== Favicon ================== -->
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
 
     <!-- ================== FONTS ==================== -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -73,7 +82,7 @@
         </ul>
       </nav>
 
-      <button class="btn-mobile-nav">
+      <button class="btn-mobile-nav" aria-label="Botão do Menu">
         <!-- OPEN ICON -->
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -139,11 +148,15 @@
             </div>
           </div>
           <div class="hero-image-box">
-            <img
-              src="assets/svg-page/balleBot-hero.svg"
-              alt="Uma figurinha do BalleBot dando tchau para o usuário"
-              class="hero-img"
-            />
+            <picture>
+              <source srcset="assets/img/balleBot-hero-min.webp" type="image/webp" />
+              <source srcset="assets/img/ballebot-hero-min.png" type="image/png" />
+              <img
+                class="hero-img"
+                src="assets/img/ballebot-hero-min.png"
+                alt="Ilustração do siteS"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -195,7 +208,7 @@
             </p>
           </div>
           <div class="how-image-box">
-            <img src="assets/svg-page/balleBot-hero.svg" alt="Ícone do Ballebot" />
+            <img src="assets/img/ballebot-hero-min.png" alt="Ícone do Ballebot" />
           </div>
         </div>
       </section>
